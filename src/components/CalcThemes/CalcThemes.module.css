@@ -1,3 +1,61 @@
 .themesContainer {
-  background-color: var(--background-main-theme3);
+  background-color: var(--background-main-theme1);
+  max-width: 32.7rem;
+  height: 4.2rem;
+  color: var(--text2-theme1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items:center;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+.themesContainer h2 {
+  font-size: 3.2rem;
+}
+
+.themes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: end;
+}
+
+.themeContainer {
+  display: grid;
+  height: 4.2rem;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.themeContainer h3 {
+  height: 2.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+  
+}
+
+.toggleContainer {
+  width: 7.1rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  height: 4.2rem;
+}
+
+.numbersContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.numbersContainer p {
+  font-size: 1.2rem;
+}
+
+.toggle p:nth-of-type(1) {
+  background-color: var(--background-toggle-keypad-theme1);
+  width: 7.1rem;
+  height: 2.6rem;
+  border-radius: 1.3rem;
 }
