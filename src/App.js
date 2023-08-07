@@ -1,6 +1,6 @@
 import style from "./App.module.css";
 
-import { CalcButtons } from "./components/CalcButtons/CalcButtons";
+import { CalcKeypad } from "./components/CalcKeypad/CalcKeypad";
 import { CalcScreen } from "./components/CalcScreen/CalcScreen";
 import { CalcThemes } from "./components/CalcThemes/CalcThemes";
 
@@ -9,7 +9,7 @@ function App() {
     <div className={style.page}>
       <CalcThemes />
       <CalcScreen />
-      <CalcButtons />
+      <CalcKeypad />
     </div>
   );
 }
