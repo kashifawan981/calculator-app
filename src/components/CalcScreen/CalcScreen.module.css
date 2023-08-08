@@ -9,7 +9,9 @@
   border-radius: 1rem;
 }
 
-.screenContainer p {
+.screen {
+  background-color: unset;
+  border: unset;
   font-size: 4rem;
   margin: auto 2.4rem;
   color: var(--text1-theme1);

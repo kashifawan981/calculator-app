@@ -1,0 +1,30 @@
+/* .buttonsContainer {
+    height: 27.9rem;
+    gap: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  
+  .buttonsContainer button {
+    height: 6.4rem;
+    width: 6rem;
+    font-size: 3.2rem;
+  } */
+  
+  /* .buttonsContainer button:nth-of-type(4),
+  button:nth-of-type(17),
+  button:nth-of-type(18) {
+    font-size: 2rem;
+    text-transform: uppercase;
+  } */
+
+  .button {
+    height: 6.4rem;
+    width: 6rem;
+    font-size: 3.2rem;
+  }
+
+  .buttonClass {
+    background-color: red;
+  }

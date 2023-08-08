@@ -1,9 +1,14 @@
 import style from "./CalcScreen.module.css";
 
-export function CalcScreen() {
+import React from "react";
+
+export const CalcScreen = ({ calculation }) => {
+  const displayValue = calculation === '' ? '0' : calculation.replace('.', ',');
   return (
-    <main className={style.screenContainer}>
-      <p>399,981</p>
-    </main>
+    <div className={style.screenContainer}>
+      <div className={style.screen}>{displayValue}</div>
+    </div>
   );
-}
+};
+
+// export default CalcScreen;

@@ -15,7 +15,7 @@
   grid-template-rows: repeat(5, 1fr);
 }
 
-.buttonsContainer button {
+.button {
   height: 6.4rem;
   width: 6rem;
   font-size: 3.2rem;
