@@ -25,8 +25,6 @@ export const CalcKeypad = ({
     "0",
     "/",
     "*",
-    "RESET",
-    "=",
   ];
 
   return (
@@ -36,18 +34,14 @@ export const CalcKeypad = ({
           <CalcButton
             key={value}
             value={value}
-            onClick={
-              value === "RESET"
-                ? handleReset
-                : value === "DEL"
-                ? handleDelete
-                : handleButtonClick
-            }
+            onClick={value === "DEL" ? handleDelete : handleButtonClick}
           />
         ))}
+      </div>
+      <div className={style.buttonsContainer2}>
+        <CalcButton value="RESET" onClick={handleReset} />
+        <CalcButton value="=" onClick={handleButtonClick} />
       </div>
     </div>
   );
 };
-
-// export default CalcKeypad;

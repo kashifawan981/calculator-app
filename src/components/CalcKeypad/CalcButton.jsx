@@ -1,32 +1,28 @@
-import style from "./CalcButton.module.css"
+import style from "./CalcButton.module.css";
 
 import React from "react";
 
 export const CalcButton = ({ value, onClick }) => {
-
-
-  const specialButtons = ['RESET', 'DEL', '='];
+  const specialButtons = ["DEL"];
   let buttonClass;
 
-  if (specialButtons.includes(value)) {
-    if (value === 'RESET') {
-      buttonClass = style.blueButtons;
-    } else if (value === 'DEL') {
-      buttonClass = style.blueButtons;
-    } else if (value === '=') {
-      buttonClass = style.redButton;
+  if (value === "RESET") {
+    buttonClass = style.resetButton;
+  } else if (value === "=") {
+    buttonClass = style.equalButton;
+  } else if (specialButtons.includes(value)) {
+    if (value === "DEL") {
+      buttonClass = style.deleteButton;
     }
   } else {
     buttonClass = style.regButton;
   }
 
   return (
-    <div >
+    <div>
       <button className={buttonClass} onClick={() => onClick(value)}>
         {value === "*" ? "x" : value}
       </button>
     </div>
   );
 };
-
-// export default CalcButton;
