@@ -9,15 +9,13 @@ import { CalcThemes } from "./components/CalcThemes/CalcThemes";
 
 function App() {
   const [calculation, setCalculation] = useState("");
-  const [isResultDisplayed, setIsResultDisplayed] = useState(false); // Track result display
+  const [isResultDisplayed, setIsResultDisplayed] = useState(false);
 
   const handleButtonClick = (value) => {
     if (isResultDisplayed && !isNaN(value) && value !== '.') {
-      // Start a new calculation when a new number is clicked after a result
       setCalculation(value);
       setIsResultDisplayed(false);
     } else {
-      // Continue calculation as usual
       if (value === '=') {
         try {
           const result = math.evaluate(calculation.replace(',', '.').replace('x', '*'));
@@ -32,7 +30,7 @@ function App() {
         handleReset();
       } else {
         setCalculation(calculation + value.replace(',', '.'));
-        setIsResultDisplayed(false); // Ensure new input after numbers
+        setIsResultDisplayed(false);
       }
     }
   }

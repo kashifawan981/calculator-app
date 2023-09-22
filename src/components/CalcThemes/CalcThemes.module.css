@@ -1,11 +1,9 @@
 .themesContainer {
-  background-color: var(--background-main-theme1);
   max-width: 32.7rem;
   height: 4.2rem;
-  color: var(--text2-theme1);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items:center;
+  align-items: center;
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3.2rem;
@@ -33,7 +31,6 @@
   letter-spacing: 0.1rem;
   font-size: 1.2rem;
   padding-top: 0.7rem;
-  
 }
 
 .toggleContainer {
@@ -53,9 +50,35 @@
   font-size: 1.2rem;
 }
 
-.toggle p:nth-of-type(1) {
-  background-color: var(--background-toggle-keypad-theme1);
+.toggle {
   width: 7.1rem;
   height: 2.6rem;
   border-radius: 1.3rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.theme1 {
+  background-color: var(--background-main-theme1);
+  color: var(--text2-theme1);
+  .toggle {
+    background-color: var(--background-toggle-keypad-theme1);
+  }
+}
+
+.theme2 {
+  background-color: var(--background-main-theme2);
+  color: var(--text1-theme2);
+  .toggle {
+    background-color: var(--background-toggle-keypad-theme2);
+  }
+}
+
+.theme3 {
+  background-color: var(--background-main-theme3);
+  color: var(--text1-theme3);
+  .toggle {
+    background-color: var(--background-toggle-keypad-theme3);
+  }
 }
