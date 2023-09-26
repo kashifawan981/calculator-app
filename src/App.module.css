@@ -42,7 +42,7 @@
 /* css reset */
 html {
     min-height: 100%;
-    background-color: white;
+    background-color: red;
   }
   
   *,
@@ -57,4 +57,16 @@ html {
   
   ::-webkit-scrollbar {
     display: none;
+  }
+
+  .theme1 {
+    background-color: var(--background-main-theme1);
+  }
+  
+  .theme2 {
+    background-color: var(--background-main-theme2);
+  }
+  
+  .theme3 {
+    background-color: var(--background-main-theme3);
   }

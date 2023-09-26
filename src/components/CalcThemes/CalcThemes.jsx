@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import style from "./CalcThemes.module.css";
 
-export function CalcThemes() {
+export function CalcThemes({ onThemeChange }) {
   const [theme, setTheme] = useState("theme1");
 
   const handleThemeChange = (event) => {
     const newTheme = event.target.value;
     setTheme(newTheme);
+    onThemeChange(newTheme);
   };
 
   return (

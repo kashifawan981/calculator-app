@@ -43,10 +43,16 @@ function App() {
     setCalculation("");
   };
 
+  const [theme, setTheme] = useState("theme1");
+
+  const handleThemeChange = (newTheme) => {
+    setTheme(newTheme);
+  };
+
   return (
-    <div className={style.page}>
-      <CalcThemes />
-      <CalcScreen calculation={calculation} />
+    <div className={`${style.page} ${style[theme]}`} theme={theme}>
+      <CalcThemes onThemeChange={handleThemeChange}/>
+      <CalcScreen calculation={calculation} theme={theme}/>
       <CalcKeypad
         handleButtonClick={handleButtonClick}
         handleDelete={handleDelete}
