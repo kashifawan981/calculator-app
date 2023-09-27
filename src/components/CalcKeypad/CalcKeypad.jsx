@@ -7,6 +7,7 @@ export const CalcKeypad = ({
   handleButtonClick,
   handleDelete,
   handleReset,
+  theme
 }) => {
   const buttonValues = [
     "7",
@@ -28,7 +29,7 @@ export const CalcKeypad = ({
   ];
 
   return (
-    <div className={style.keypadContainer}>
+    <div className={`${style.keypadContainer} ${style[theme]}`}>
       <div className={style.buttonsContainer}>
         {buttonValues.map((value) => (
           <CalcButton
@@ -39,8 +40,8 @@ export const CalcKeypad = ({
         ))}
       </div>
       <div className={style.buttonsContainer2}>
-        <CalcButton value="RESET" onClick={handleReset} />
-        <CalcButton value="=" onClick={handleButtonClick} />
+        <CalcButton value="RESET" onClick={handleReset} theme={theme} />
+        <CalcButton value="=" onClick={handleButtonClick} theme={theme}/>
       </div>
     </div>
   );

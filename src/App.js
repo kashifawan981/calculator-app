@@ -57,6 +57,7 @@ function App() {
         handleButtonClick={handleButtonClick}
         handleDelete={handleDelete}
         handleReset={handleReset}
+        theme={theme}
       />
     </div>
   );

@@ -8,6 +8,11 @@ export function CalcThemes({ onThemeChange }) {
     const newTheme = event.target.value;
     setTheme(newTheme);
     onThemeChange(newTheme);
+    updateBodyClass(newTheme);
+  };
+
+  const updateBodyClass = (selectedTheme) => {
+    document.body.className = selectedTheme;
   };
 
   return (

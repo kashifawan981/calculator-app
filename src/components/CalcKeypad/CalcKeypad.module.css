@@ -1,5 +1,4 @@
 .keypadContainer {
-  background-color: var(--background-toggle-keypad-theme1);
   width: 32.7rem;
   height: 42rem;
   margin: auto;
@@ -21,4 +20,16 @@
   gap: 1.3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.theme1 {
+  background-color: var(--background-keypad-theme1);
+}
+
+.theme2 {
+  background-color: var(--background-keypad-theme2);
+}
+
+.theme3 {
+  background-color: var(--background-keypad-theme3);
 }

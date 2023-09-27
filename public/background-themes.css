@@ -1,0 +1,15 @@
+.theme1 {
+  background-color: var(--background-main-theme1);
+}
+
+.theme2 {
+  background-color: var(--background-main-theme2);
+}
+
+.theme3 {
+  background-color: var(--background-main-theme3);
+}
+
+#root {
+  margin: auto;
+}
