@@ -1,15 +1,21 @@
-import style from "./App.module.css";
+import style from './App.module.css';
 
-import React, { useState } from "react";
-import * as math from "mathjs";
+import React, { useEffect, useState } from 'react';
+import * as math from 'mathjs';
 
-import { CalcKeypad } from "./components/CalcKeypad/CalcKeypad";
-import { CalcScreen } from "./components/CalcScreen/CalcScreen";
-import { CalcThemes } from "./components/CalcThemes/CalcThemes";
+import { CalcKeypad } from './components/CalcKeypad/CalcKeypad';
+import { CalcScreen } from './components/CalcScreen/CalcScreen';
+import { CalcThemes } from './components/CalcThemes/CalcThemes';
 
 function App() {
-  const [calculation, setCalculation] = useState("");
+  const [calculation, setCalculation] = useState('');
   const [isResultDisplayed, setIsResultDisplayed] = useState(false);
+  const [theme, setTheme] = useState('theme1');
+
+  useEffect(() => {
+    // Set default theme when the component mounts
+    document.body.className = theme;
+  }, [theme]); // <-- Dependency array to watch for changes in 'theme'
 
   const handleButtonClick = (value) => {
     if (isResultDisplayed && !isNaN(value) && value !== '.') {
@@ -18,7 +24,9 @@ function App() {
     } else {
       if (value === '=') {
         try {
-          const result = math.evaluate(calculation.replace(',', '.').replace('x', '*'));
+          const result = math.evaluate(
+            calculation.replace(',', '.').replace('x', '*')
+          );
           setCalculation(result.toString());
           setIsResultDisplayed(true);
         } catch (error) {
@@ -33,17 +41,15 @@ function App() {
         setIsResultDisplayed(false);
       }
     }
-  }
+  };
 
   const handleDelete = () => {
     setCalculation(calculation.slice(0, -1));
   };
 
   const handleReset = () => {
-    setCalculation("");
+    setCalculation('');
   };
-
-  const [theme, setTheme] = useState("theme1");
 
   const handleThemeChange = (newTheme) => {
     setTheme(newTheme);
@@ -51,8 +57,8 @@ function App() {
 
   return (
     <div className={`${style.page} ${style[theme]}`} theme={theme}>
-      <CalcThemes onThemeChange={handleThemeChange}/>
-      <CalcScreen calculation={calculation} theme={theme}/>
+      <CalcThemes onThemeChange={handleThemeChange} />
+      <CalcScreen calculation={calculation} theme={theme} />
       <CalcKeypad
         handleButtonClick={handleButtonClick}
         handleDelete={handleDelete}
