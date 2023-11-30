@@ -3,7 +3,7 @@ import style from './App.module.css';
 import React, { useEffect, useState } from 'react';
 import { CalcKeypad } from './components/CalcKeypad/CalcKeypad';
 import { CalcScreen } from './components/CalcScreen/CalcScreen';
-import { CalcThemes } from './components/CalcThemes/CalcThemes';
+import CalcThemes from './components/CalcThemes/CalcThemes';
 
 function App() {
   // State variables for calculation, result display, and theme.
