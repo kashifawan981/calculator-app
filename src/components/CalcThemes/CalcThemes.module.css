@@ -96,8 +96,6 @@
 }
 
 .toggle .ball {
-  background: red;
-  /* opacity: .4; */
   height: 1.6rem;
   width: 1.6rem;
   border-radius: 50%;
@@ -110,12 +108,24 @@
   left: 5.5px;
 }
 
+.toggle input[type='radio']:first-of-type:checked ~ .ball:hover {
+  background-color: var(--key-hover1-theme1);
+}
+
 .toggle input[type='radio']:nth-of-type(2):checked ~ .ball {
   left: 27.5px;
 }
 
+.toggle input[type='radio']:nth-of-type(2):checked ~ .ball:hover {
+  background-color: var(--key-hover1-theme2);
+}
+
 .toggle input[type='radio']:last-of-type:checked ~ .ball {
   left: 50px;
+}
+
+.toggle input[type='radio']:last-of-type:checked ~ .ball:hover {
+  background-color: var(--key-hover1-theme3);
 }
 
 .theme1 .toggle .ball {
