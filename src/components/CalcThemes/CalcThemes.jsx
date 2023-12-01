@@ -1,3 +1,4 @@
+// Import necessary libraries and styles
 import React, { useState, useEffect } from 'react';
 import style from './CalcThemes.module.css';
 
@@ -11,8 +12,7 @@ const CalcThemes = ({ onThemeChange }) => {
   }, [theme]);
 
   // Function to handle theme change.
-  const handleThemeChange = (event) => {
-    const newTheme = event.target.value;
+  const handleThemeChange = (newTheme) => {
     setTheme(newTheme);
     // Propagate theme change to parent component.
     onThemeChange(newTheme);
@@ -21,6 +21,12 @@ const CalcThemes = ({ onThemeChange }) => {
   // Function to update body class for global styling.
   const updateBodyClass = (selectedTheme) => {
     document.body.className = selectedTheme;
+  };
+
+  // Function to handle toggle switch change
+  const handleToggleChange = (event) => {
+    const newTheme = event.target.value;
+    handleThemeChange(newTheme);
   };
 
   return (
@@ -38,17 +44,31 @@ const CalcThemes = ({ onThemeChange }) => {
             ))}
           </div>
           <div className={style.toggle}>
-            {[1, 2, 3].map((num) => (
-              <input
-                key={num}
-                type="radio"
-                name="theme-type"
-                value={`theme${num}`}
-                id={`theme${num}`}
-                checked={theme === `theme${num}`}
-                onChange={handleThemeChange}
-              />
-            ))}
+            <input
+              type="radio"
+              name="theme-type"
+              value="theme1"
+              id="first"
+              checked={theme === 'theme1'}
+              onChange={() => handleToggleChange({ target: { value: 'theme1' } })}
+            />
+            <input
+              type="radio"
+              name="theme-type"
+              value="theme2"
+              id="second"
+              checked={theme === 'theme2'}
+              onChange={() => handleToggleChange({ target: { value: 'theme2' } })}
+            />
+            <input
+              type="radio"
+              name="theme-type"
+              value="theme3"
+              id="third"
+              checked={theme === 'theme3'}
+              onChange={() => handleToggleChange({ target: { value: 'theme3' } })}
+            />
+            <div className={style.ball}></div>
           </div>
         </div>
       </div>

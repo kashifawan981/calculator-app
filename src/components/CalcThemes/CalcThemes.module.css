@@ -44,6 +44,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
+  gap: 1rem;
 }
 
 .numbersContainer p {
@@ -81,4 +82,46 @@
   .toggle {
     background-color: var(--background-toggle-keypad-theme3);
   }
+}
+
+/* Your existing CSS styles */
+
+.toggle {
+  position: relative;
+}
+
+.toggle .ball {
+  background: red;
+  /* opacity: .4; */
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+  position: absolute;
+  /* top: 3px; */
+  transition: left 0.5s ease; /* Updated the transition property */
+}
+
+/* Updated styles for the ball position */
+.toggle input[type='radio']:first-of-type:checked ~ .ball {
+  left: 4px;
+}
+
+.toggle input[type='radio']:nth-of-type(2):checked ~ .ball {
+  left: 27.5px;
+}
+
+.toggle input[type='radio']:last-of-type:checked ~ .ball {
+  left: 51px;
+}
+
+.theme1 .toggle .ball {
+  background-color: red; /* Color for theme1 */
+}
+
+.theme2 .toggle .ball {
+  background-color: green; /* Color for theme2 */
+}
+
+.theme3 .toggle .ball {
+  background-color: yellow; /* Color for theme3 */
 }
