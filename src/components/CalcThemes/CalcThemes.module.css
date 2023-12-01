@@ -62,9 +62,14 @@
 }
 
 .toggle input {
-  width: 100%;
+  width: 90%;
   opacity: 0;
   cursor: pointer;
+  accent-color: black;
+}
+
+.toggle input:hover {
+  opacity: 0.09;
 }
 
 .theme1 {
