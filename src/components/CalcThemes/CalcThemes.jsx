@@ -1,6 +1,5 @@
-// Import necessary libraries and styles
-import React, { useState, useEffect } from 'react';
 import style from './CalcThemes.module.css';
+import React, { useState, useEffect } from 'react';
 
 const CalcThemes = ({ onThemeChange }) => {
   // State to manage the current theme
@@ -50,7 +49,9 @@ const CalcThemes = ({ onThemeChange }) => {
               value="theme1"
               id="first"
               checked={theme === 'theme1'}
-              onChange={() => handleToggleChange({ target: { value: 'theme1' } })}
+              onChange={() =>
+                handleToggleChange({ target: { value: 'theme1' } })
+              }
             />
             <input
               type="radio"
@@ -58,7 +59,9 @@ const CalcThemes = ({ onThemeChange }) => {
               value="theme2"
               id="second"
               checked={theme === 'theme2'}
-              onChange={() => handleToggleChange({ target: { value: 'theme2' } })}
+              onChange={() =>
+                handleToggleChange({ target: { value: 'theme2' } })
+              }
             />
             <input
               type="radio"
@@ -66,7 +69,9 @@ const CalcThemes = ({ onThemeChange }) => {
               value="theme3"
               id="third"
               checked={theme === 'theme3'}
-              onChange={() => handleToggleChange({ target: { value: 'theme3' } })}
+              onChange={() =>
+                handleToggleChange({ target: { value: 'theme3' } })
+              }
             />
             <div className={style.ball}></div>
           </div>
