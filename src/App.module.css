@@ -1,23 +1,29 @@
 :root {
   /* theme 1 */
-  --background-main-theme1: hsl(223, 26%, 31%);
-  --background-toggle-keypad-theme1: hsl(223, 31%, 20%);
-  --key-toggle-btn-theme1: hsl(6, 63%, 50%);
-  --key-hover1-theme1: hsl(6, 93%, 67%, 1);
-  --background-screen-theme1: hsl(224, 36%, 15%);
-  --background-keypad-theme1: hsl(224, 30%, 21%);
-  --key-background1-theme1: hsl(225, 21%, 49%);
-  --key-shadow1-theme1: hsl(224, 28%, 35%);
-  --key-background2-theme1: hsl(6, 63%, 50%);
-  --key-shadow2-theme1: hsl(6, 70%, 34%);
-  --key-background3-theme1: hsl(30, 25%, 89%);
-  --key-shadow3-theme1: hsl(28, 16%, 65%);
-  --text1-theme1: hsl(221, 14%, 31%);
-  --text2-theme1: hsl(0, 0%, 100%);
+  --background-body-theme1: hsla(223, 26%, 31%, 1);
+
+  --background-toggle-theme1: hsla(223, 31%, 20%, 1);
+  --background-screen-theme1: hsla(224, 36%, 15%, 1);
+  --background-keypad-theme1: hsla(224, 30%, 21%, 1);
+
+  --key-background-regular-theme1: hsla(31, 24%, 89%, 1);
+  --key-shadow-regular-theme1: hsla(27, 15%, 65%, 1);
+  --key-hover-regular-theme1: hsla(31, 24%, 89%, 1);
+
+  --key-background-del-and-reset-theme1: hsla(224, 21%, 49%, 1);
+  --key-shadow-del-and-reset-theme1: hsla(225, 28%, 35%, 1);
+  --key-hover-del-and-reset-theme1: hsla(224, 51%, 76%, 1);
+
+  --key-background-equal-and-toggle-theme1: hsla(6, 63%, 50%, 1);
+  --key-shadow-equal-theme1: hsla(6, 70%, 34%, 1);
+  --key-hover-equal-and-toggle-theme1: hsla(6, 93%, 67%, 1);
+
+  --text1-theme1: hsla(221, 14%, 31%, 1);
+  --text2-theme1: hsla(0, 0%, 100%, 1);
 
   /* theme 2 */
-  --background-main-theme2: hsl(0, 0%, 90%);
-  --background-toggle-keypad-theme2: hsl(0, 5%, 81%);
+  --background-main-theme2: hsla(0, 0%, 90%, 1);
+  --background-toggle-keypad-theme2: hsla(0, 5%, 81%, 1);
   --key-toggle-btn-theme2: hsl(25, 98%, 40%);
   --key-hover1-theme2: hsl(25, 100%, 61%, 1);
   --background-screen-theme2: hsl(0, 0%, 93%);
@@ -32,8 +38,8 @@
   --text2-theme2: hsl(0, 0%, 100%);
 
   /* theme 3 */
-  --background-main-theme3: hsl(268, 75%, 9%);
-  --background-toggle-keypad-theme3: hsl(268, 71%, 12%);
+  --background-main-theme3: hsla(267, 74%, 9%, 1);
+  --background-toggle-keypad-theme3: hsla(268, 71%, 12%, 1);
   --key-toggle-btn-theme3: hsl(176, 100%, 44%);
   --key-hover1-theme3: hsl(176, 100%, 79%, 1);
   --background-screen-theme3: hsl(268, 71%, 12%);
@@ -63,7 +69,7 @@ html {
   margin: 0;
   padding: 0;
   font-size: 62.5%; /* base font size to 10px, to facilitate using REM unit. 12px would be expressed as 1.2rem, 24px would be 2.4rem, and so on.*/
-  font-family: "League Spartan", sans-serif;
+  font-family: 'League Spartan', sans-serif;
 }
 
 ::-webkit-scrollbar {
