@@ -58,6 +58,13 @@
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+}
+
+.toggle input {
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .theme1 {
@@ -84,8 +91,6 @@
   }
 }
 
-/* Your existing CSS styles */
-
 .toggle {
   position: relative;
 }
@@ -97,13 +102,12 @@
   width: 1.6rem;
   border-radius: 50%;
   position: absolute;
-  /* top: 3px; */
-  transition: left 0.5s ease; /* Updated the transition property */
+  transition: left 0.5s ease;
+  cursor: pointer;
 }
 
-/* Updated styles for the ball position */
 .toggle input[type='radio']:first-of-type:checked ~ .ball {
-  left: 4px;
+  left: 5.5px;
 }
 
 .toggle input[type='radio']:nth-of-type(2):checked ~ .ball {
@@ -111,17 +115,17 @@
 }
 
 .toggle input[type='radio']:last-of-type:checked ~ .ball {
-  left: 51px;
+  left: 50px;
 }
 
 .theme1 .toggle .ball {
-  background-color: red; /* Color for theme1 */
+  background-color: var(--key-toggle-btn-theme1);
 }
 
 .theme2 .toggle .ball {
-  background-color: green; /* Color for theme2 */
+  background-color: var(--key-toggle-btn-theme2);
 }
 
 .theme3 .toggle .ball {
-  background-color: yellow; /* Color for theme3 */
+  background-color: var(--key-toggle-btn-theme3);
 }
