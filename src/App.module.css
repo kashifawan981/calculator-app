@@ -44,23 +44,21 @@
   --text2-theme2: hsla(0, 0%, 100%, 1);
 
   /* theme 3 */
-  --background-body-theme3: ;
+  --background-body-theme3: hsla(0, 0%, 0%, 1);
 
-  --background-toggle-theme3: ;
-  --background-screen-theme3: ;
-  --background-keypad-theme3: ;
+  --background-toggle-screen-keypad-theme3: hsla(268, 71%, 12%, 1);
 
   --key-background-regular-theme3: hsla(268, 47%, 21%, 1);
-  --key-shadow-regular-theme3: hsla(290, 70%, 36%,1) ;
+  --key-shadow-regular-theme3: hsla(290, 70%, 36%, 1);
   --key-hover-regular-theme3: hsla(268, 54%, 44%, 1);
 
-  --key-background-del-and-reset-theme3: ;
-  --key-shadow-del-and-reset-theme3: ;
-  --key-hover-del-and-reset-theme3: ;
+  --key-background-del-and-reset-theme3: hsla(280, 90%, 26%, 1);
+  --key-shadow-del-and-reset-theme3: hsla(285, 91%, 52%, 1);
+  --key-hover-del-and-reset-theme3: hsla(280, 56%, 44%, 1);
 
-  --key-background-equal-and-toggle-theme3: ;
-  --key-shadow-equal-theme3: ;
-  --key-hover-equal-and-toggle-theme3: ;
+  --key-background-equal-and-toggle-theme3: hsla(176, 100%, 44%, 1);
+  --key-shadow-equal-theme3: hsla(177, 92%, 70%, 1);
+  --key-hover-equal-and-toggle-theme3: hsla(176, 100%, 79%, 1);
 
   --text1-theme3: hsla(52, 100%, 62%, 1);
   --text2-theme3: hsla(0, 0%, 100%, 1);
