@@ -73,7 +73,7 @@
 }
 
 .theme1 {
-  /* background-color: var(red); */
+  background-color: var(--background-body-theme1);
   color: var(--text2-theme1);
   .toggle {
     background-color: var(--background-toggle-theme1);
@@ -81,7 +81,7 @@
 }
 
 .theme2 {
-  /* background-color: var(--background-main-theme2); */
+  background-color: var(--background-body-theme2);
   color: var(--text1-theme2);
   .toggle {
     background-color: var(--background-toggle-theme2);
@@ -89,7 +89,7 @@
 }
 
 .theme3 {
-  /* background-color: var(--background-main-theme3); */
+  background-color: var(--background-body-theme3);
   color: var(--text1-theme3);
   .toggle {
     background-color: var(--background-toggle-screen-keypad-theme3);
