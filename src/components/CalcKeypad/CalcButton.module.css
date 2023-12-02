@@ -3,21 +3,21 @@
   width: 6rem;
   font-size: 3.2rem;
   color: var(--text1-theme1);
-  background-color: var(--key-background3-theme1);
+  background-color: var(--key-background-regular-theme1);
   border: unset;
   border-radius: 0.5rem;
-  box-shadow: 0 0.4rem 0 var(--key-shadow3-theme1);
+  box-shadow: 0 0.4rem 0 var(--key-shadow-regular-theme1);
 }
 
 .deleteButton {
   height: 6rem;
   width: 6rem;
   font-size: 2rem;
-  background-color: var(--key-background1-theme1);
+  background-color: var(--key-background-del-and-reset-theme1);
   color: var(--text2-theme1);
   border: unset;
   border-radius: 0.5rem;
-  box-shadow: 0 0.4rem 0 var(--key-shadow1-theme1);
+  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme1);
 }
 
 .resetButton {
@@ -38,37 +38,37 @@
 }
 
 .theme1-resetButton {
-  background-color: var(--key-background1-theme1);
+  background-color: var(--key-background-del-and-reset-theme1);
   color: var(--text2-theme1);
-  box-shadow: 0 0.4rem 0 var(--key-shadow1-theme1);
+  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme1);
 }
 .theme2-resetButton {
-  background-color: var(--key-background1-theme2);
+  background-color: var(--key-background-del-and-reset-theme2);
   color: var(--text2-theme2);
-  box-shadow: 0 0.4rem 0 var(--key-shadow1-theme2);
+  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme2);
 }
 
 .theme3-resetButton {
-  background-color: var(--key-background1-theme3);
+  background-color: var(--key-background-del-and-reset-theme3);
   color: var(--text2-theme3);
-  box-shadow: 0 0.4rem 0 var(--key-shadow1-theme3);
-  color: var(--text3-theme3)
+  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme3);
+  color: var(--text2-theme3);
 }
 
 .theme1-equalButton {
-  background-color: var(--key-background2-theme1);
+  background-color: var(--key-background-equal-and-toggle-theme1);
   color: var(--text2-theme1);
-  box-shadow: 0 0.4rem 0 var(--key-shadow2-theme1);
+  box-shadow: 0 0.4rem 0 var(--key-shadow-equal-theme1);
 }
 
 .theme2-equalButton {
-  background-color: var(--key-background2-theme2);
+  background-color: var(--key-background-equal-and-toggle-theme2);
   color: var(--text2-theme2);
-  box-shadow: 0 0.4rem 0 var(--key-shadow2-theme2);
+  box-shadow: 0 0.4rem 0 var(--key-shadow-equal-theme2);
 }
 
 .theme3-equalButton {
-  background-color: var(--key-background2-theme3);
-  color: var(--text2-theme3);
-  box-shadow: 0 0.4rem 0 var(--key-shadow2-theme3);
+  background-color: var(--key-background-equal-and-toggle-theme3);
+  color: var(--text3-theme3);
+  box-shadow: 0 0.4rem 0 var(--key-shadow-equal-theme3);
 }
