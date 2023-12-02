@@ -73,26 +73,26 @@
 }
 
 .theme1 {
-  background-color: var(--background-main-theme1);
+  /* background-color: var(red); */
   color: var(--text2-theme1);
   .toggle {
-    background-color: var(--background-toggle-keypad-theme1);
+    background-color: var(--background-toggle-theme1);
   }
 }
 
 .theme2 {
-  background-color: var(--background-main-theme2);
+  /* background-color: var(--background-main-theme2); */
   color: var(--text1-theme2);
   .toggle {
-    background-color: var(--background-toggle-keypad-theme2);
+    background-color: var(--background-toggle-theme2);
   }
 }
 
 .theme3 {
-  background-color: var(--background-main-theme3);
+  /* background-color: var(--background-main-theme3); */
   color: var(--text1-theme3);
   .toggle {
-    background-color: var(--background-toggle-keypad-theme3);
+    background-color: var(--background-toggle-screen-keypad-theme3);
   }
 }
 
@@ -114,7 +114,7 @@
 }
 
 .toggle input[type='radio']:first-of-type:checked ~ .ball:hover {
-  background-color: var(--key-hover1-theme1);
+  background-color: var(--key-hover-equal-and-toggle-theme1);
 }
 
 .toggle input[type='radio']:nth-of-type(2):checked ~ .ball {
@@ -122,7 +122,7 @@
 }
 
 .toggle input[type='radio']:nth-of-type(2):checked ~ .ball:hover {
-  background-color: var(--key-hover1-theme2);
+  background-color: var(--key-hover-equal-and-toggle-theme2);
 }
 
 .toggle input[type='radio']:last-of-type:checked ~ .ball {
@@ -130,17 +130,17 @@
 }
 
 .toggle input[type='radio']:last-of-type:checked ~ .ball:hover {
-  background-color: var(--key-hover1-theme3);
+  background-color: var(--key-hover-equal-and-toggle-theme3);
 }
 
 .theme1 .toggle .ball {
-  background-color: var(--key-toggle-btn-theme1);
+  background-color: var(--key-background-equal-and-toggle-theme1);
 }
 
 .theme2 .toggle .ball {
-  background-color: var(--key-toggle-btn-theme2);
+  background-color: var(--key-background-equal-and-toggle-theme2);
 }
 
 .theme3 .toggle .ball {
-  background-color: var(--key-toggle-btn-theme3);
+  background-color: var(--key-background-equal-and-toggle-theme3);
 }
