@@ -14,7 +14,7 @@
   border: unset;
   font-size: 4rem;
   margin: auto 2.4rem;
-  color: var(--text1-theme1);
+  /* color: var(--text1-theme1); */
 }
 
 .theme1 {
@@ -28,6 +28,6 @@
 }
 
 .theme3 {
-  background-color: var(--background-screen-theme3);
+  background-color: var(--background-toggle-screen-keypad-theme3);
   color: var(--text1-theme3);
 }
