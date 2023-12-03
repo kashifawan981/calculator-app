@@ -6,7 +6,6 @@
   border-radius: 0.5rem;
   cursor: pointer;
   padding-top:0.8rem;
-  /* text-align: center; */
 }
 
 .deleteButton {
@@ -40,7 +39,7 @@
   padding-top:0.5rem;
 }
 
-/* regular buttons */
+/* REGULAR BUTTONS */
 
 .theme1-regButton {
   background-color: var(--key-background-regular-theme1);
@@ -72,7 +71,7 @@
   background-color: var(--key-hover-regular-theme3);
 }
 
-/* delete button */
+/* DELETE BUTTON */
 
 .theme1-deleteButton {
   background-color: var(--key-background-del-and-reset-theme1);
@@ -104,7 +103,7 @@
   background-color: var(--key-hover-del-and-reset-theme3);
 }
 
-/* reset button */
+/* RESET BUTTON */
 
 .theme1-resetButton {
   background-color: var(--key-background-del-and-reset-theme1);
@@ -136,7 +135,7 @@
   background-color: var(--key-hover-del-and-reset-theme3);
 }
 
-/* equal button */
+/* EQUAL BUTTON */
 
 .theme1-equalButton {
   background-color: var(--key-background-equal-and-toggle-theme1);
