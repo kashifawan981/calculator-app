@@ -1,7 +1,7 @@
 import style from './CalcThemes.module.css';
 import React, { useState, useEffect } from 'react';
 
-const CalcThemes = ({ onThemeChange }) => {
+export function CalcThemes({ onThemeChange }) {
   // State to manage the current theme
   const [theme, setTheme] = useState('theme1');
 
@@ -13,7 +13,7 @@ const CalcThemes = ({ onThemeChange }) => {
   // Function to handle theme change.
   const handleThemeChange = (newTheme) => {
     setTheme(newTheme);
-    // Propagate theme change to parent component.
+    // Propagate theme change to the parent component.
     onThemeChange(newTheme);
   };
 
@@ -28,8 +28,25 @@ const CalcThemes = ({ onThemeChange }) => {
     handleThemeChange(newTheme);
   };
 
+  // Function to render radio buttons based on the available themes
+  const renderRadioButtons = () => {
+    const themes = ['theme1', 'theme2', 'theme3'];
+
+    return themes.map((themeOption, index) => (
+      <input
+        key={index}
+        type="radio"
+        name="theme-type"
+        value={themeOption}
+        id={themeOption}
+        checked={theme === themeOption}
+        onChange={() => handleToggleChange({ target: { value: themeOption } })}
+      />
+    ));
+  };
+
   return (
-    <main className={`${style.themesContainer} ${style[theme]}`}>
+    <section className={`${style.themesContainer} ${style[theme]}`}>
       <h2>calc</h2>
       <div className={style.themes}>
         <div className={style.themeContainer}>
@@ -43,42 +60,13 @@ const CalcThemes = ({ onThemeChange }) => {
             ))}
           </div>
           <div className={style.toggle}>
-            <input
-              type="radio"
-              name="theme-type"
-              value="theme1"
-              id="first"
-              checked={theme === 'theme1'}
-              onChange={() =>
-                handleToggleChange({ target: { value: 'theme1' } })
-              }
-            />
-            <input
-              type="radio"
-              name="theme-type"
-              value="theme2"
-              id="second"
-              checked={theme === 'theme2'}
-              onChange={() =>
-                handleToggleChange({ target: { value: 'theme2' } })
-              }
-            />
-            <input
-              type="radio"
-              name="theme-type"
-              value="theme3"
-              id="third"
-              checked={theme === 'theme3'}
-              onChange={() =>
-                handleToggleChange({ target: { value: 'theme3' } })
-              }
-            />
+            {renderRadioButtons()}
             <div className={style.ball}></div>
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
-};
+}
 
 export default CalcThemes;

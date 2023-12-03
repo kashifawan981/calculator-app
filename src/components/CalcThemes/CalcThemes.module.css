@@ -59,6 +59,7 @@
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  position: relative;
 }
 
 .toggle input {
@@ -72,34 +73,6 @@
   opacity: 0.09;
 }
 
-.theme1 {
-  background-color: var(--background-body-theme1);
-  color: var(--text2-theme1);
-  .toggle {
-    background-color: var(--background-toggle-theme1);
-  }
-}
-
-.theme2 {
-  background-color: var(--background-body-theme2);
-  color: var(--text1-theme2);
-  .toggle {
-    background-color: var(--background-toggle-theme2);
-  }
-}
-
-.theme3 {
-  background-color: var(--background-body-theme3);
-  color: var(--text1-theme3);
-  .toggle {
-    background-color: var(--background-toggle-screen-keypad-theme3);
-  }
-}
-
-.toggle {
-  position: relative;
-}
-
 .toggle .ball {
   height: 1.6rem;
   width: 1.6rem;
@@ -107,6 +80,15 @@
   position: absolute;
   transition: left 0.5s ease;
   cursor: pointer;
+}
+
+/* THEME 1 */
+.theme1 {
+  background-color: var(--background-body-theme1);
+  color: var(--text2-theme1);
+  .toggle {
+    background-color: var(--background-toggle-theme1);
+  }
 }
 
 .toggle input[type='radio']:first-of-type:checked ~ .ball {
@@ -117,6 +99,19 @@
   background-color: var(--key-hover-equal-and-toggle-theme1);
 }
 
+.theme1 .toggle .ball {
+  background-color: var(--key-background-equal-and-toggle-theme1);
+}
+
+/* THEME 2 */
+.theme2 {
+  background-color: var(--background-body-theme2);
+  color: var(--text1-theme2);
+  .toggle {
+    background-color: var(--background-toggle-theme2);
+  }
+}
+
 .toggle input[type='radio']:nth-of-type(2):checked ~ .ball {
   left: 27.5px;
 }
@@ -125,20 +120,25 @@
   background-color: var(--key-hover-equal-and-toggle-theme2);
 }
 
+.theme2 .toggle .ball {
+  background-color: var(--key-background-equal-and-toggle-theme2);
+}
+
+/* THEME 3 */
+
+.theme3 {
+  background-color: var(--background-body-theme3);
+  color: var(--text1-theme3);
+  .toggle {
+    background-color: var(--background-toggle-screen-keypad-theme3);
+  }
+}
 .toggle input[type='radio']:last-of-type:checked ~ .ball {
   left: 50px;
 }
 
 .toggle input[type='radio']:last-of-type:checked ~ .ball:hover {
   background-color: var(--key-hover-equal-and-toggle-theme3);
-}
-
-.theme1 .toggle .ball {
-  background-color: var(--key-background-equal-and-toggle-theme1);
-}
-
-.theme2 .toggle .ball {
-  background-color: var(--key-background-equal-and-toggle-theme2);
 }
 
 .theme3 .toggle .ball {
