@@ -5,6 +5,8 @@
   border: unset;
   border-radius: 0.5rem;
   cursor: pointer;
+  padding-top:0.8rem;
+  /* text-align: center; */
 }
 
 .deleteButton {
@@ -14,6 +16,7 @@
   border: unset;
   border-radius: 0.5rem;
   cursor: pointer;
+  padding-top:0.5rem;
 }
 
 .resetButton {
@@ -23,6 +26,7 @@
   border: unset;
   border-radius: 0.5rem;
   cursor: pointer;
+  padding-top:0.5rem;
 }
 
 .equalButton {
@@ -33,6 +37,7 @@
   border-radius: 0.5rem;
   box-shadow: 0.4rem;
   cursor: pointer;
+  padding-top:0.5rem;
 }
 
 /* regular buttons */

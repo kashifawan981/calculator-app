@@ -1,11 +1,12 @@
-import style from "./CalcScreen.module.css";
-import React from "react";
+import React from 'react';
+import style from './CalcScreen.module.css';
 
-export const CalcScreen = ({ calculation, theme }) => {
-  const displayValue = calculation === '' ? '0' : calculation.replace('.', ',');
+export function CalcScreen({ calculation = '', theme }) {
+  const displayValue = calculation || '0';
+
   return (
-    <div className={`${style.screenContainer} ${style[theme]}`}>
-      <div className={`${style.screen} ${style[theme]}`}>{displayValue}</div>
-    </div>
+    <section className={`${style.screenContainer} ${style[theme]}`}>
+      <div className={`${style.screen} ${style[theme]}`}>{displayValue.replace('.', ',')}</div>
+    </section>
   );
-};
+}
