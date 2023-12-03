@@ -1,27 +1,26 @@
-import style from "./CalcButton.module.css";
-import React from "react";
+import style from './CalcButton.module.css';
+import React from 'react';
 
-export const CalcButton = ({ value, onClick, theme }) => {
-  const specialButtons = ["DEL"];
-  let buttonClass;
-
-  if (value === "RESET") {
-    buttonClass = `${style.resetButton} ${style[theme + "-resetButton"]}`;
-  } else if (value === "=") {
-    buttonClass = `${style.equalButton} ${style[theme + "-equalButton"]}`;
-  } else if (specialButtons.includes(value)) {
-    if (value === "DEL") {
-      buttonClass = `${style.deleteButton} ${style[theme + "-deleteButton"]}`;
-    }
+const getButtonClass = (value, theme) => {
+  if (value === 'RESET') {
+    return `${style.resetButton} ${style[theme + '-resetButton']}`;
+  } else if (value === '=') {
+    return `${style.equalButton} ${style[theme + '-equalButton']}`;
+  } else if (value === 'DEL') {
+    return `${style.deleteButton} ${style[theme + '-deleteButton']}`;
   } else {
-    buttonClass = `${style.regButton} ${style[theme + "-regButton"]}`;
+    return `${style.regButton} ${style[theme + '-regButton']}`;
   }
+};
+
+export function CalcButton({ value, onClick, theme }) {
+  const buttonClass = getButtonClass(value, theme);
 
   return (
     <div>
       <button className={buttonClass} onClick={() => onClick(value)}>
-        {value === "*" ? "x" : value}
+        {value === '*' ? 'x' : value}
       </button>
     </div>
   );
-};
+}

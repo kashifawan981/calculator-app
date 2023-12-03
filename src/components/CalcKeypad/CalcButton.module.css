@@ -39,8 +39,8 @@
 
 .theme1-regButton {
   background-color: var(--key-background-regular-theme1);
-  color: var(--text1-theme1);
   box-shadow: 0 0.4rem 0 var(--key-shadow-regular-theme1);
+  color: var(--text1-theme1);
 }
 
 .theme1-regButton:hover {
@@ -48,73 +48,117 @@
 }
 
 .theme2-regButton {
-  color: var(--text1-theme2);
   background-color: var(--key-background-regular-theme2);
   box-shadow: 0 0.4rem 0 var(--key-shadow-regular-theme2);
+  color: var(--text1-theme2);
+}
+
+.theme2-regButton:hover {
+  background-color: var(--key-hover-regular-theme2);
 }
 
 .theme3-regButton {
-  color: var(--text1-theme3);
   background-color: var(--key-background-regular-theme3);
   box-shadow: 0 0.4rem 0 var(--key-shadow-regular-theme3);
+  color: var(--text1-theme3);
+}
+
+.theme3-regButton:hover {
+  background-color: var(--key-hover-regular-theme3);
 }
 
 /* delete button */
 
 .theme1-deleteButton {
   background-color: var(--key-background-del-and-reset-theme1);
-  color: var(--text2-theme1);
   box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme1);
+  color: var(--text2-theme1);
+}
+
+.theme1-deleteButton:hover {
+  background-color: var(--key-hover-del-and-reset-theme1);
 }
 
 .theme2-deleteButton {
   background-color: var(--key-background-del-and-reset-theme2);
-  color: var(--text2-theme2);
   box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme2);
+  color: var(--text2-theme2);
+}
+
+.theme2-deleteButton:hover {
+  background-color: var(--key-hover-del-and-reset-theme2);
 }
 
 .theme3-deleteButton {
   background-color: var(--key-background-del-and-reset-theme3);
-  color: var(--text2-theme3);
   box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme3);
+  color: var(--text2-theme3);
+}
+
+.theme3-deleteButton:hover {
+  background-color: var(--key-hover-del-and-reset-theme3);
 }
 
 /* reset button */
 
 .theme1-resetButton {
   background-color: var(--key-background-del-and-reset-theme1);
-  color: var(--text2-theme1);
   box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme1);
+  color: var(--text2-theme1);
+}
+
+.theme1-resetButton:hover {
+  background-color: var(--key-hover-del-and-reset-theme1);
 }
 
 .theme2-resetButton {
   background-color: var(--key-background-del-and-reset-theme2);
-  color: var(--text2-theme2);
   box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme2);
+  color: var(--text2-theme2);
+}
+
+.theme2-resetButton:hover {
+  background-color: var(--key-hover-del-and-reset-theme2);
 }
 
 .theme3-resetButton {
   background-color: var(--key-background-del-and-reset-theme3);
-  color: var(--text2-theme3);
   box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme3);
+  color: var(--text2-theme3);
+}
+
+.theme3-resetButton:hover {
+  background-color: var(--key-hover-del-and-reset-theme3);
 }
 
 /* equal button */
 
 .theme1-equalButton {
   background-color: var(--key-background-equal-and-toggle-theme1);
-  color: var(--text2-theme1);
   box-shadow: 0 0.4rem 0 var(--key-shadow-equal-theme1);
+  color: var(--text2-theme1);
+}
+
+.theme1-equalButton:hover {
+  background-color: var(--key-hover-equal-and-toggle-theme1);
 }
 
 .theme2-equalButton {
   background-color: var(--key-background-equal-and-toggle-theme2);
-  color: var(--text2-theme2);
   box-shadow: 0 0.4rem 0 var(--key-shadow-equal-theme2);
+  color: var(--text2-theme2);
+}
+
+.theme2-equalButton:hover {
+  background-color: var(--key-hover-equal-and-toggle-theme2);
 }
 
 .theme3-equalButton {
   background-color: var(--key-background-equal-and-toggle-theme3);
-  color: var(--text2-theme3);
   box-shadow: 0 0.4rem 0 var(--key-shadow-equal-theme3);
+  color: var(--text3-theme3);
+}
+
+.theme3-equalButton:hover {
+  background-color: var(--key-hover-equal-and-toggle-theme3);
 }
