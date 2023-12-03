@@ -1,5 +1,5 @@
-import style from './CalcButton.module.css';
 import React from 'react';
+import style from './CalcButton.module.css';
 
 const getButtonClass = (value, theme) => {
   if (value === 'RESET') {

@@ -1,6 +1,6 @@
-import style from "./CalcKeypad.module.css";
 import React from "react";
 import { CalcButton } from "./CalcButton";
+import style from "./CalcKeypad.module.css";
 
 // Function to generate CalcButton components based on buttonValues array
 const generateButtons = (buttonValues, handleButtonClick, handleDelete, handleReset, theme) => {
