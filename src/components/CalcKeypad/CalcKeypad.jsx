@@ -23,7 +23,7 @@ export function CalcKeypad ({ handleButtonClick, handleDelete, handleReset, them
   ];
 
   return (
-    <div className={`${style.keypadContainer} ${style[theme]}`}>
+    <section className={`${style.keypadContainer} ${style[theme]}`}>
       <div className={style.buttonsContainer}>
         {generateButtons(buttonValues, handleButtonClick, handleDelete, handleReset, theme)}
       </div>
@@ -31,6 +31,6 @@ export function CalcKeypad ({ handleButtonClick, handleDelete, handleReset, them
         <CalcButton value="RESET" onClick={handleReset} theme={theme} />
         <CalcButton value="=" onClick={handleButtonClick} theme={theme} />
       </div>
-    </div>
+    </section>
   );
 };
