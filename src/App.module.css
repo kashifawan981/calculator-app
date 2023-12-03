@@ -8,7 +8,7 @@
 
   --key-background-regular-theme1: hsla(31, 24%, 89%, 1);
   --key-shadow-regular-theme1: hsla(27, 15%, 65%, 1);
-  --key-hover-regular-theme1: hsla(31, 24%, 89%, 1);
+  --key-hover-regular-theme1: hsla(31, 100%, 100%, 1);
 
   --key-background-del-and-reset-theme1: hsla(224, 21%, 49%, 1);
   --key-shadow-del-and-reset-theme1: hsla(225, 28%, 35%, 1);
@@ -84,11 +84,4 @@ html {
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-.page {
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* padding: auto; */
 }

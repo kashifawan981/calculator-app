@@ -36,12 +36,13 @@ export const CalcKeypad = ({
             key={value}
             value={value}
             onClick={value === "DEL" ? handleDelete : handleButtonClick}
+            theme={theme}
           />
         ))}
       </div>
       <div className={style.buttonsContainer2}>
         <CalcButton value="RESET" onClick={handleReset} theme={theme} />
-        <CalcButton value="=" onClick={handleButtonClick} theme={theme}/>
+        <CalcButton value="=" onClick={handleButtonClick} theme={theme} />
       </div>
     </div>
   );

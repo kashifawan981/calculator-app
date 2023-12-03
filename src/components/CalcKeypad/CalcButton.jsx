@@ -1,5 +1,4 @@
 import style from "./CalcButton.module.css";
-
 import React from "react";
 
 export const CalcButton = ({ value, onClick, theme }) => {
@@ -12,10 +11,10 @@ export const CalcButton = ({ value, onClick, theme }) => {
     buttonClass = `${style.equalButton} ${style[theme + "-equalButton"]}`;
   } else if (specialButtons.includes(value)) {
     if (value === "DEL") {
-      buttonClass = style.deleteButton;
+      buttonClass = `${style.deleteButton} ${style[theme + "-deleteButton"]}`;
     }
   } else {
-    buttonClass = style.regButton;
+    buttonClass = `${style.regButton} ${style[theme + "-regButton"]}`;
   }
 
   return (

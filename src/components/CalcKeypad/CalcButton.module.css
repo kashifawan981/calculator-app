@@ -2,22 +2,18 @@
   height: 6rem;
   width: 6rem;
   font-size: 3.2rem;
-  color: var(--text1-theme1);
-  background-color: var(--key-background-regular-theme1);
   border: unset;
   border-radius: 0.5rem;
-  box-shadow: 0 0.4rem 0 var(--key-shadow-regular-theme1);
+  cursor: pointer;
 }
 
 .deleteButton {
   height: 6rem;
   width: 6rem;
   font-size: 2rem;
-  background-color: var(--key-background-del-and-reset-theme1);
-  color: var(--text2-theme1);
   border: unset;
   border-radius: 0.5rem;
-  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme1);
+  cursor: pointer;
 }
 
 .resetButton {
@@ -26,6 +22,7 @@
   font-size: 2rem;
   border: unset;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .equalButton {
@@ -35,13 +32,61 @@
   border: unset;
   border-radius: 0.5rem;
   box-shadow: 0.4rem;
+  cursor: pointer;
 }
+
+/* regular buttons */
+
+.theme1-regButton {
+  background-color: var(--key-background-regular-theme1);
+  color: var(--text1-theme1);
+  box-shadow: 0 0.4rem 0 var(--key-shadow-regular-theme1);
+}
+
+.theme1-regButton:hover {
+  background-color: var(--key-hover-regular-theme1);
+}
+
+.theme2-regButton {
+  color: var(--text1-theme2);
+  background-color: var(--key-background-regular-theme2);
+  box-shadow: 0 0.4rem 0 var(--key-shadow-regular-theme2);
+}
+
+.theme3-regButton {
+  color: var(--text1-theme3);
+  background-color: var(--key-background-regular-theme3);
+  box-shadow: 0 0.4rem 0 var(--key-shadow-regular-theme3);
+}
+
+/* delete button */
+
+.theme1-deleteButton {
+  background-color: var(--key-background-del-and-reset-theme1);
+  color: var(--text2-theme1);
+  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme1);
+}
+
+.theme2-deleteButton {
+  background-color: var(--key-background-del-and-reset-theme2);
+  color: var(--text2-theme2);
+  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme2);
+}
+
+.theme3-deleteButton {
+  background-color: var(--key-background-del-and-reset-theme3);
+  color: var(--text2-theme3);
+  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme3);
+}
+
+/* reset button */
 
 .theme1-resetButton {
   background-color: var(--key-background-del-and-reset-theme1);
   color: var(--text2-theme1);
   box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme1);
 }
+
 .theme2-resetButton {
   background-color: var(--key-background-del-and-reset-theme2);
   color: var(--text2-theme2);
@@ -52,8 +97,9 @@
   background-color: var(--key-background-del-and-reset-theme3);
   color: var(--text2-theme3);
   box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme3);
-  color: var(--text2-theme3);
 }
+
+/* equal button */
 
 .theme1-equalButton {
   background-color: var(--key-background-equal-and-toggle-theme1);
@@ -69,6 +115,6 @@
 
 .theme3-equalButton {
   background-color: var(--key-background-equal-and-toggle-theme3);
-  color: var(--text3-theme3);
+  color: var(--text2-theme3);
   box-shadow: 0 0.4rem 0 var(--key-shadow-equal-theme3);
 }
