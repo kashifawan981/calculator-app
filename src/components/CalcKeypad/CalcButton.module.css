@@ -169,7 +169,6 @@
   background-color: var(--key-hover-equal-and-toggle-theme3);
 }
 
-
 /* Media query for iPhone 13 Pro (390 x 844 and above) */
 @media screen and (min-width: 390px) and (min-height: 844px) {
   body {

@@ -31,3 +31,31 @@
   background-color: var(--background-toggle-screen-keypad-theme3);
   color: var(--text1-theme3);
 }
+
+/* Media query for iPhone 13 Pro (390 x 844 and above) */
+@media screen and (min-width: 390px) and (min-height: 844px) {
+  body {
+    /* Styles for iPhone 13 Pro */
+  }
+}
+
+/* Media query for iPhone 11 Pro Max (414 x 896 and above) */
+@media screen and (min-width: 414px) and (min-height: 896px) {
+  body {
+    /* Styles for iPhone 11 Pro Max */
+  }
+}
+
+/* Media query for iPad Air (820 x 1180 and above) */
+@media screen and (min-width: 820px) and (min-height: 1180px) {
+  body {
+    /* Styles for iPad Air */
+  }
+}
+
+/* Media query for MacBook Pro 14" (1512 x 982 and above) */
+@media screen and (min-width: 1512px) and (min-height: 982px) {
+  body {
+    /* Styles for MacBook Pro 14" */
+  }
+}
