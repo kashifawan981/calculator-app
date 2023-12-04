@@ -43,8 +43,9 @@
 
 /* Media query for iPhone 11 Pro Max (414 x 896 and above) */
 @media screen and (min-width: 414px) and (min-height: 896px) {
-  body {
-    /* Styles for iPhone 11 Pro Max */
+  .keypadContainer {
+    width: 36rem;
+    height: 46.9rem;
   }
 }
 

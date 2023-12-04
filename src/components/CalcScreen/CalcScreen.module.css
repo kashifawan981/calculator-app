@@ -1,5 +1,4 @@
 .screenContainer {
-  /* background-color: var(--background-screen-theme1); */
   max-width: 32.7rem;
   min-height: 8.8rem;
   margin: auto;
@@ -14,7 +13,6 @@
   border: unset;
   font-size: 4rem;
   margin: auto 2.4rem;
-  /* color: var(--text1-theme1); */
 }
 
 .theme1 {
@@ -41,8 +39,13 @@
 
 /* Media query for iPhone 11 Pro Max (414 x 896 and above) */
 @media screen and (min-width: 414px) and (min-height: 896px) {
-  body {
-    /* Styles for iPhone 11 Pro Max */
+  .screenContainer {
+    max-width: 36rem;
+    padding-top: 1rem;
+  }
+
+  .screen {
+    font-size: 5rem;
   }
 }
 

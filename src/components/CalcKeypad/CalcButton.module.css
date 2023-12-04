@@ -178,9 +178,47 @@
 
 /* Media query for iPhone 11 Pro Max (414 x 896 and above) */
 @media screen and (min-width: 414px) and (min-height: 896px) {
-  body {
-    /* Styles for iPhone 11 Pro Max */
+  .regButton {
+    height: 7rem;
+    width: 7rem;
+    font-size: 4rem;
+    /* border: unset; */
+    border-radius: 0.8rem;
+    /* cursor: pointer; */
+    /* padding-top:0.8rem; */
   }
+  
+  .deleteButton {
+    height: 7rem;
+    width: 7rem;
+    font-size: 2.8rem;
+    /* border: unset; */
+    border-radius: 0.8rem;
+    cursor: pointer;
+    padding-top:0.5rem;
+  }
+  
+  .resetButton {
+    height: 7rem;
+    width: 15rem;
+    font-size: 2.8rem;
+    /* border: unset; */
+    border-radius: 0.8rem;
+    /* cursor: pointer; */
+    /* padding-top:0.5rem; */
+  }
+  
+  .equalButton {
+    height: 7rem;
+    width: 15rem;
+    font-size: 2.8rem;
+    /* border: unset; */
+    border-radius: 0.8rem;
+    /* box-shadow: 0.4rem; */
+    /* cursor: pointer; */
+    /* padding-top:0.5rem; */
+  }
+  
 }
 
 /* Media query for iPad Air (820 x 1180 and above) */
