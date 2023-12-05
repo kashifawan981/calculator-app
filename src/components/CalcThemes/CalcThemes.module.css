@@ -63,10 +63,11 @@
 }
 
 .toggle input {
-  width: 90%;
+  /* width: 90%; */
   opacity: 0;
   cursor: pointer;
   accent-color: black;
+  /* background-color: red; */
 }
 
 .toggle input:hover {
@@ -165,11 +166,10 @@
   .themesContainer h2 {
     font-size: 4rem;
   }
-  
 }
 
 /* Media query for MacBook Pro 14" (1512 x 982 and above) */
-@media screen and (min-width: 1512px)  {
+@media screen and (min-width: 1512px) {
   .themesContainer {
     max-width: 54rem;
   }
@@ -178,4 +178,3 @@
     font-size: 3.2rem;
   }
 }
-
