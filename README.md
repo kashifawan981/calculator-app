@@ -8,7 +8,7 @@ The calculator app is a web-based calculator designed with a modern and aestheti
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -38,7 +38,7 @@ Users should be able to:
 #### Theme 3 - Desktop
 ![Theme 3 - Desktop](./src/assets/screenshots/screenshot-theme3-desktop.jpg)
 #### Theme 3 - Mobile
-<img src="./src/assets/screenshots/screenshot-theme3-mobile.png" alt="Theme 3 - Mobile" width="200">
+![Theme 3 - Mobile](./src/assets/screenshots/screenshot-theme3-mobile.png)
 
 ### Links
 
