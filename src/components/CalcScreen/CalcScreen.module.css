@@ -32,16 +32,29 @@
   color: var(--text1-theme3);
 }
 
-/* MEDIA QUERY FOR MACBOOK PRO 14" (1512 x 982 AND ABOVE) */
+/* MEDIA QUERY FOR IPHONE SE (375 x 667 AND ABOVE) */
 
-@media screen and (min-width: 1512px) {
+@media screen and (min-width: 375px) {
   .screenContainer {
-    max-width: 54rem;
-    min-height: 12.8rem;
+    max-width: 32.7rem;
   }
 
   .screen {
-    font-size: 5.6rem;
+    font-size: 4rem;
+  }
+}
+
+
+/* MEDIA QUERY FOR IPHONE 13 PRO (390 x 844 AND ABOVE) */
+
+@media screen and (min-width: 390px) {
+  .screenContainer {
+    max-width: 35rem;
+    padding-top: 1rem;
+  }
+
+  .screen {
+    font-size: 5rem;
   }
 }
 
@@ -58,27 +71,16 @@
   }
 }
 
-/* MEDIA QUERY FOR IPHONE 13 PRO (390 x 844 AND ABOVE) */
+/* MEDIA QUERY FOR MACBOOK PRO 14" (1512 x 982 AND ABOVE) */
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 1512px) {
   .screenContainer {
-    max-width: 35rem;
-    padding-top: 1rem;
+    max-width: 54rem;
+    min-height: 12.8rem;
   }
 
   .screen {
-    font-size: 5rem;
+    font-size: 5.6rem;
   }
 }
 
-/* MEDIA QUERY FOR IPHONE SE (375 x 667 AND ABOVE) */
-
-@media screen and (min-width: 375px) {
-  .screenContainer {
-    max-width: 32.7rem;
-  }
-
-  .screen {
-    font-size: 4rem;
-  }
-}
