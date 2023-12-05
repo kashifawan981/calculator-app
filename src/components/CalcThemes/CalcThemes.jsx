@@ -59,10 +59,10 @@ export function CalcThemes({ onThemeChange }) {
               <p key={num}>{num}</p>
             ))}
           </div>
-          <div className={style.toggle}>
+          <label className={style.toggle}>
             {renderRadioButtons()}
             <div className={style.ball}></div>
-          </div>
+          </label>
         </div>
       </div>
     </section>

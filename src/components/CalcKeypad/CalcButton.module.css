@@ -1,42 +1,25 @@
-/* Default styles for screens up to 375 x 667 (mobile) */
+/* BASE STYLES FOR ALL SCREENS */
 
 .regButton {
-  height: 6rem;
-  width: 6rem;
-  font-size: 3.2rem;
   border: unset;
-  border-radius: 0.5rem;
   cursor: pointer;
   padding-top:0.8rem;
 }
 
 .deleteButton {
-  height: 6rem;
-  width: 6rem;
-  font-size: 2rem;
   border: unset;
-  border-radius: 0.5rem;
   cursor: pointer;
   padding-top:0.5rem;
 }
 
 .resetButton {
-  height: 6rem;
-  width: 13.3rem;
-  font-size: 2rem;
   border: unset;
-  border-radius: 0.5rem;
   cursor: pointer;
   padding-top:0.5rem;
 }
 
 .equalButton {
-  height: 6rem;
-  width: 13.3rem;
-  font-size: 2rem;
   border: unset;
-  border-radius: 0.5rem;
-  box-shadow: 0.4rem;
   cursor: pointer;
   padding-top:0.5rem;
 }
@@ -169,7 +152,40 @@
   background-color: var(--key-hover-equal-and-toggle-theme3);
 }
 
-/* Media query for iPhone 13 Pro (390 x 844 and above) */
+/* MEDIA QUERY FOR IPHONE SE (375 x 667 AND ABOVE) */
+
+@media screen and (min-width: 375px) {
+  .regButton {
+    height: 6rem;
+    width: 6rem;
+    font-size: 3.2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .deleteButton {
+    height: 6rem;
+    width: 6rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .resetButton {
+    height: 6rem;
+    width: 13.3rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .equalButton {
+    height: 6rem;
+    width: 13.3rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+  }
+}
+
+/* MEDIA QUERY FOR IPHONE 13 PRO (390 x 844 AND ABOVE) */
+
 @media screen and (min-width: 390px) {
   .regButton {
     height: 6.5rem;
@@ -198,10 +214,10 @@
     font-size: 2.8rem;
     border-radius: 0.7rem;
   }
-
 }
 
-/* Media query for iPhone 11 Pro Max (414 x 896 and above) */
+/* MEDIA QUERY FOR IPHONE 11 PRO MAX (414 x 896 AND ABOVE) */
+
 @media screen and (min-width: 414px)  {
   .regButton {
     height: 7rem;
@@ -232,7 +248,8 @@
   }
 }
 
-/* Media query for MacBook Pro 14" (1512 x 982 and above) */
+/* MEDIA QUERY FOR MACBOOK PRO 14"Media query for MacBook Pro 14" (1512 x 982 AND ABOVE) */
+
 @media screen and (min-width: 1512px) {
   .regButton {
     height: 6.4rem;
