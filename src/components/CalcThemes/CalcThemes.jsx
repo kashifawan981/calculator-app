@@ -36,6 +36,7 @@ export function CalcThemes({ onThemeChange }) {
       <input
         key={index}
         type="radio"
+        aria-label=""
         name="theme-type"
         value={themeOption}
         id={themeOption}
@@ -59,10 +60,10 @@ export function CalcThemes({ onThemeChange }) {
               <p key={num}>{num}</p>
             ))}
           </div>
-          <label className={style.toggle}>
+          <div className={style.toggle}>
             {renderRadioButtons()}
             <div className={style.ball}></div>
-          </label>
+          </div>
         </div>
       </div>
     </section>
