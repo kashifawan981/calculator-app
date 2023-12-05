@@ -31,14 +31,19 @@
 }
 
 /* Media query for iPhone 13 Pro (390 x 844 and above) */
-@media screen and (min-width: 390px) and (min-height: 844px) {
-  body {
-    /* Styles for iPhone 13 Pro */
+@media screen and (min-width: 390px)  {
+  .screenContainer {
+    max-width: 35rem;
+    padding-top: 1rem;
+  }
+
+  .screen {
+    font-size: 5rem;
   }
 }
 
 /* Media query for iPhone 11 Pro Max (414 x 896 and above) */
-@media screen and (min-width: 414px) and (min-height: 896px) {
+@media screen and (min-width: 414px) {
   .screenContainer {
     max-width: 36rem;
     padding-top: 1rem;
@@ -49,16 +54,14 @@
   }
 }
 
-/* Media query for iPad Air (820 x 1180 and above) */
-@media screen and (min-width: 820px) and (min-height: 1180px) {
-  body {
-    /* Styles for iPad Air */
-  }
-}
-
 /* Media query for MacBook Pro 14" (1512 x 982 and above) */
-@media screen and (min-width: 1512px) and (min-height: 982px) {
-  body {
-    /* Styles for MacBook Pro 14" */
+@media screen and (min-width: 1512px) {
+  .screenContainer {
+    max-width: 54rem;
+    min-height: 12.8rem;
+  }
+
+  .screen {
+    font-size: 5.6rem;
   }
 }
