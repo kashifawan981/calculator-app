@@ -34,33 +34,6 @@
   background-color: var(--background-toggle-screen-keypad-theme3);
 }
 
-/* MEDIA QUERY FOR IPHONE SE (375 x 667 AND ABOVE) */
-
-@media screen and (min-width: 375px) {
-  .keypadContainer {
-    width: 32.7rem;
-    height: 42rem;
-  }
-}
-
-/* MEDIA QUERY FOR IPHONE 13 PRO (390 x 844 AND ABOVE) */
-
-@media screen and (min-width: 390px) {
-  .keypadContainer {
-    width: 35rem;
-    height: 44.7rem;
-  }
-}
-
-/* MEDIA QUERY FOR IPHONE 11 PRO MAX (414 x 896 AND ABOVE) */
-
-@media screen and (min-width: 414px) {
-  .keypadContainer {
-    width: 36rem;
-    height: 46.9rem;
-  }
-}
-
 /* MEDIA QUERY FOR MACBOOK PRO 14" (1512 x 982 AND ABOVE) */
 
 @media screen and (min-width: 1512px) {
@@ -77,5 +50,32 @@
   .buttonsContainer2 {
     margin-top: 2.7rem;
     gap: 3rem;
+  }
+}
+
+/* MEDIA QUERY FOR IPHONE 11 PRO MAX (414 x 896 AND ABOVE) */
+
+@media screen and (min-width: 414px) {
+  .keypadContainer {
+    width: 36rem;
+    height: 46.9rem;
+  }
+}
+
+/* MEDIA QUERY FOR IPHONE 13 PRO (390 x 844 AND ABOVE) */
+
+@media screen and (min-width: 390px) {
+  .keypadContainer {
+    width: 35rem;
+    height: 44.7rem;
+  }
+}
+
+/* MEDIA QUERY FOR IPHONE SE (375 x 667 AND ABOVE) */
+
+@media screen and (min-width: 375px) {
+  .keypadContainer {
+    width: 32.7rem;
+    height: 42rem;
   }
 }
