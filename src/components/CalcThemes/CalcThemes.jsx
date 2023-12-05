@@ -36,7 +36,7 @@ export function CalcThemes({ onThemeChange }) {
       <input
         key={index}
         type="radio"
-        aria-label=""
+        aria-label="theme"
         name="theme-type"
         value={themeOption}
         id={themeOption}
