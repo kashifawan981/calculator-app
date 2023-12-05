@@ -48,11 +48,11 @@ export function CalcThemes({ onThemeChange }) {
 
   return (
     <nav className={`${style.themesContainer} ${style[theme]}`}>
-      <h2>calc</h2>
+      <h1>calc</h1>
       <div className={style.themes}>
         <div className={style.themeContainer}>
-          <p></p>
-          <h3>theme</h3>
+          {/* <p></p> */}
+          <p>theme</p>
         </div>
         <div className={style.toggleContainer}>
           <div className={style.numbersContainer}>

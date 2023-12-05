@@ -9,24 +9,26 @@
   margin-bottom: 3.2rem;
 }
 
+.themesContainer h1 {
+  font-size: 3.2rem;
+}
+
 .themes {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   justify-items: end;
 }
 
 .themeContainer {
   display: grid;
   height: 4.2rem;
-  grid-template-rows: repeat(2, 1fr);
 }
 
-.themeContainer h3 {
-  height: 2.6rem;
+.themeContainer p {
+  height: 100%;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: 1.2rem;
-  padding-top: 0.7rem;
+  padding-top: 2.5rem;
 }
 
 .toggleContainer {
@@ -153,6 +155,18 @@
   .themesContainer h2 {
     font-size: 3.2rem;
   }
+
+  .themeContainer {
+    display: grid;
+    height: 4.2rem;
+    grid-column: 1 / span 1;
+  }
+  .themes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
 }
 
 /* MEDIA QUERY FOR IPHONE 13 PRO (390 x 844 AND ABOVE) */
@@ -180,7 +194,8 @@
 }
 
 /* MEDIA QUERY FOR MACBOOK PRO 14" (1512 x 982 AND ABOVE) */
-@media screen and (min-width: 1512px)  {
+
+@media screen and (min-width: 1512px) {
   .themesContainer {
     max-width: 54rem;
   }
@@ -188,5 +203,12 @@
   .themesContainer h2 {
     font-size: 3.2rem;
   }
-}
 
+  .themes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .themeContainer {
+    grid-column: 2 / span 1;
+  }
+}
