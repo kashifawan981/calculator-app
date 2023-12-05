@@ -51,7 +51,6 @@ export function CalcThemes({ onThemeChange }) {
       <h1>calc</h1>
       <div className={style.themes}>
         <div className={style.themeContainer}>
-          {/* <p></p> */}
           <p>theme</p>
         </div>
         <div className={style.toggleContainer}>
