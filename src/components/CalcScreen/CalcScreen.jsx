@@ -5,8 +5,8 @@ export function CalcScreen({ calculation = '', theme }) {
   const displayValue = calculation || '0';
 
   return (
-    <section className={`${style.screenContainer} ${style[theme]}`}>
+    <header className={`${style.screenContainer} ${style[theme]}`}>
       <div className={`${style.screen} ${style[theme]}`}>{displayValue.replace('.', ',')}</div>
-    </section>
+    </header>
   );
 }

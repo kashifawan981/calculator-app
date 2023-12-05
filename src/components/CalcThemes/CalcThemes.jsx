@@ -47,7 +47,7 @@ export function CalcThemes({ onThemeChange }) {
   };
 
   return (
-    <section className={`${style.themesContainer} ${style[theme]}`}>
+    <nav className={`${style.themesContainer} ${style[theme]}`}>
       <h2>calc</h2>
       <div className={style.themes}>
         <div className={style.themeContainer}>
@@ -66,7 +66,7 @@ export function CalcThemes({ onThemeChange }) {
           </div>
         </div>
       </div>
-    </section>
+    </nav>
   );
 }
 

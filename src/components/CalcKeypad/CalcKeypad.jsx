@@ -46,7 +46,7 @@ export function CalcKeypad({
   ];
 
   return (
-    <section className={`${style.keypadContainer} ${style[theme]}`}>
+    <main className={`${style.keypadContainer} ${style[theme]}`}>
       <div className={style.buttonsContainer}>
         {generateButtons(
           buttonValues,
@@ -60,6 +60,6 @@ export function CalcKeypad({
         <CalcButton value="RESET" onClick={handleReset} theme={theme} />
         <CalcButton value="=" onClick={handleButtonClick} theme={theme} />
       </div>
-    </section>
+    </main>
   );
 }

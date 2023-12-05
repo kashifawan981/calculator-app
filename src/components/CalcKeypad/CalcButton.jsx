@@ -15,7 +15,6 @@ const getButtonClass = (value, theme) => {
 
 export function CalcButton({ value, onClick, theme }) {
   const buttonClass = getButtonClass(value, theme);
-
   return (
     <div>
       <button className={buttonClass} onClick={() => onClick(value)}>
