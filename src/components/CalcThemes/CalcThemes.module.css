@@ -12,6 +12,7 @@
 
 .themesContainer h1 {
   font-size: 3.2rem;
+  margin-left: 0.7rem;
 }
 .themes {
   display: grid;
