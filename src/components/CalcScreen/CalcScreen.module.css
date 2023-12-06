@@ -1,19 +1,19 @@
 /* BASE STYLES FOR ALL SCREENS */
 
 .screenContainer {
-  min-height: 8.8rem;
+  width: 54rem;
+  height: 12.8rem;
   margin: auto;
   margin-bottom: 2.4rem;
   text-align: right;
   display: grid;
   border-radius: 1rem;
-  padding-top: 1rem;
 }
 
 .screen {
   background-color: unset;
   border: unset;
-
+  font-size: 5.6rem;
   margin: auto 2.4rem;
 }
 
@@ -34,53 +34,13 @@
 
 /* MEDIA QUERY FOR IPHONE SE (375 x 667 AND ABOVE) */
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .screenContainer {
-    max-width: 32.7rem;
+    width: 32.7rem;
+    height: 8.8rem;
   }
 
   .screen {
     font-size: 4rem;
   }
 }
-
-
-/* MEDIA QUERY FOR IPHONE 13 PRO (390 x 844 AND ABOVE) */
-
-@media screen and (min-width: 390px) {
-  .screenContainer {
-    max-width: 35rem;
-    padding-top: 1rem;
-  }
-
-  .screen {
-    font-size: 5rem;
-  }
-}
-
-/* MEDIA QUERY FOR IPHONE 11 PRO MAX (414 x 896 AND ABOVE) */
-
-@media screen and (min-width: 414px) {
-  .screenContainer {
-    max-width: 36rem;
-    padding-top: 1rem;
-  }
-
-  .screen {
-    font-size: 5rem;
-  }
-}
-
-/* MEDIA QUERY FOR MACBOOK PRO 14" (1512 x 982 AND ABOVE) */
-
-@media screen and (min-width: 1512px) {
-  .screenContainer {
-    max-width: 54rem;
-    min-height: 12.8rem;
-  }
-
-  .screen {
-    font-size: 5.6rem;
-  }
-}
-

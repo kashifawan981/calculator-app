@@ -1,34 +1,62 @@
 /* BASE STYLES FOR ALL SCREENS */
 
 .regButton {
+  height: 6.4rem;
+  width: 10.1rem;
+  font-size: 4rem;
+  border-radius: 1rem;
   border: unset;
   cursor: pointer;
-  padding-top: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .deleteButton {
+  height: 6.4rem;
+  width: 10.1rem;
+  font-size: 2.8rem;
+  border-radius: 1rem;
   border: unset;
   cursor: pointer;
-  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .resetButton {
+  height: 6.4rem;
+  width: 22.7rem;
+  font-size: 2.8rem;
+  border-radius: 1rem;
   border: unset;
   cursor: pointer;
-  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .equalButton {
+  height: 6.4rem;
+  width: 22.7rem;
+  font-size: 2.8rem;
+  border-radius: 1rem;
   border: unset;
   cursor: pointer;
-  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 /* REGULAR BUTTONS */
 
 .theme1-regButton {
   background-color: var(--key-background-regular-theme1);
-  box-shadow: 0 0.4rem 0 var(--key-shadow-regular-theme1);
+  box-shadow: 0 -0.4rem 0 0 var(--key-shadow-regular-theme1) inset;
   color: var(--text1-theme1);
 }
 
@@ -38,7 +66,7 @@
 
 .theme2-regButton {
   background-color: var(--key-background-regular-theme2);
-  box-shadow: 0 0.4rem 0 var(--key-shadow-regular-theme2);
+  box-shadow: 0 -0.4rem 0 var(--key-shadow-regular-theme2) inset;
   color: var(--text1-theme2);
 }
 
@@ -48,7 +76,7 @@
 
 .theme3-regButton {
   background-color: var(--key-background-regular-theme3);
-  box-shadow: 0 0.4rem 0 var(--key-shadow-regular-theme3);
+  box-shadow: 0 -0.4rem 0 var(--key-shadow-regular-theme3) inset;
   color: var(--text1-theme3);
 }
 
@@ -60,7 +88,7 @@
 
 .theme1-deleteButton {
   background-color: var(--key-background-del-and-reset-theme1);
-  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme1);
+  box-shadow: 0 -0.4rem 0 var(--key-shadow-del-and-reset-theme1) inset;
   color: var(--text2-theme1);
 }
 
@@ -70,7 +98,7 @@
 
 .theme2-deleteButton {
   background-color: var(--key-background-del-and-reset-theme2);
-  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme2);
+  box-shadow: 0 -0.4rem 0 var(--key-shadow-del-and-reset-theme2) inset;
   color: var(--text2-theme2);
 }
 
@@ -80,7 +108,7 @@
 
 .theme3-deleteButton {
   background-color: var(--key-background-del-and-reset-theme3);
-  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme3);
+  box-shadow: 0 -0.4rem 0 var(--key-shadow-del-and-reset-theme3) inset;
   color: var(--text2-theme3);
 }
 
@@ -92,7 +120,7 @@
 
 .theme1-resetButton {
   background-color: var(--key-background-del-and-reset-theme1);
-  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme1);
+  box-shadow: 0 -0.4rem 0 var(--key-shadow-del-and-reset-theme1) inset;
   color: var(--text2-theme1);
 }
 
@@ -102,7 +130,7 @@
 
 .theme2-resetButton {
   background-color: var(--key-background-del-and-reset-theme2);
-  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme2);
+  box-shadow: 0 -0.4rem 0 var(--key-shadow-del-and-reset-theme2) inset;
   color: var(--text2-theme2);
 }
 
@@ -112,7 +140,7 @@
 
 .theme3-resetButton {
   background-color: var(--key-background-del-and-reset-theme3);
-  box-shadow: 0 0.4rem 0 var(--key-shadow-del-and-reset-theme3);
+  box-shadow: 0 -0.4rem 0 var(--key-shadow-del-and-reset-theme3) inset;
   color: var(--text2-theme3);
 }
 
@@ -124,7 +152,7 @@
 
 .theme1-equalButton {
   background-color: var(--key-background-equal-and-toggle-theme1);
-  box-shadow: 0 0.4rem 0 var(--key-shadow-equal-theme1);
+  box-shadow: 0 -0.4rem 0 var(--key-shadow-equal-theme1) inset;
   color: var(--text2-theme1);
 }
 
@@ -134,7 +162,7 @@
 
 .theme2-equalButton {
   background-color: var(--key-background-equal-and-toggle-theme2);
-  box-shadow: 0 0.4rem 0 var(--key-shadow-equal-theme2);
+  box-shadow: 0 -0.4rem 0 var(--key-shadow-equal-theme2) inset;
   color: var(--text2-theme2);
 }
 
@@ -144,7 +172,7 @@
 
 .theme3-equalButton {
   background-color: var(--key-background-equal-and-toggle-theme3);
-  box-shadow: 0 0.4rem 0 var(--key-shadow-equal-theme3);
+  box-shadow: 0 -0.4rem 0 var(--key-shadow-equal-theme3) inset;
   color: var(--text3-theme3);
 }
 
@@ -154,129 +182,32 @@
 
 /* MEDIA QUERY FOR IPHONE SE (375 x 667 AND ABOVE) */
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .regButton {
-    height: 6rem;
+    height: 6.4rem;
     width: 6rem;
     font-size: 3.2rem;
     border-radius: 0.5rem;
   }
 
   .deleteButton {
-    height: 6rem;
+    height: 6.4rem;
     width: 6rem;
     font-size: 2rem;
     border-radius: 0.5rem;
   }
 
   .resetButton {
-    height: 6rem;
+    height: 6.4rem;
     width: 13.3rem;
     font-size: 2rem;
     border-radius: 0.5rem;
   }
 
   .equalButton {
-    height: 6rem;
+    height: 6.4rem;
     width: 13.3rem;
     font-size: 2rem;
     border-radius: 0.5rem;
   }
 }
-
-/* MEDIA QUERY FOR IPHONE 13 PRO (390 x 844 AND ABOVE) */
-
-@media screen and (min-width: 390px) {
-  .regButton {
-    height: 6.5rem;
-    width: 6.5rem;
-    font-size: 4rem;
-    border-radius: 0.7rem;
-  }
-
-  .deleteButton {
-    height: 6.5rem;
-    width: 6.5rem;
-    font-size: 2.8rem;
-    border-radius: 0.7rem;
-  }
-
-  .resetButton {
-    height: 6.5rem;
-    width: 14.3rem;
-    font-size: 2.8rem;
-    border-radius: 0.7rem;
-  }
-
-  .equalButton {
-    height: 6.5rem;
-    width: 14.3rem;
-    font-size: 2.8rem;
-    border-radius: 0.7rem;
-  }
-}
-
-/* MEDIA QUERY FOR IPHONE 11 PRO MAX (414 x 896 AND ABOVE) */
-
-@media screen and (min-width: 414px) {
-  .regButton {
-    height: 7rem;
-    width: 7rem;
-    font-size: 4rem;
-    border-radius: 0.8rem;
-  }
-
-  .deleteButton {
-    height: 7rem;
-    width: 7rem;
-    font-size: 2.8rem;
-    border-radius: 0.8rem;
-  }
-
-  .resetButton {
-    height: 7rem;
-    width: 15rem;
-    font-size: 2.8rem;
-    border-radius: 0.8rem;
-  }
-
-  .equalButton {
-    height: 7rem;
-    width: 15rem;
-    font-size: 2.8rem;
-    border-radius: 0.8rem;
-  }
-}
-
-/* MEDIA QUERY FOR MACBOOK PRO 14"Media query for MacBook Pro 14" (1512 x 982 AND ABOVE) */
-
-@media screen and (min-width: 1512px) {
-  .regButton {
-    height: 6.4rem;
-    width: 10.1rem;
-    font-size: 4rem;
-    border-radius: 1rem;
-  }
-
-  .deleteButton {
-    height: 6.4rem;
-    width: 10.1rem;
-    font-size: 2.8rem;
-    border-radius: 1rem;
-  }
-
-  .resetButton {
-    height: 6.4rem;
-    width: 23rem;
-    font-size: 2.8rem;
-    border-radius: 1rem;
-  }
-
-  .equalButton {
-    height: 6.4rem;
-    width: 23rem;
-    font-size: 2.8rem;
-    border-radius: 1rem;
-  }
-}
-

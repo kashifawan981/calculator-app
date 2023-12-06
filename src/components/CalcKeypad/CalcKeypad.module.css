@@ -1,23 +1,26 @@
 /* BASE STYLES FOR ALL SCREENS */
 
 .keypadContainer {
+  width: 54rem;
+  height: 48rem;
   margin: auto;
   border-radius: 1rem;
-  padding: 2.4rem;
+  padding: 3.2rem;
+  padding-left: 3rem;
 }
 
 .buttonsContainer {
   display: grid;
-  grid-column-gap: 1.1rem;
-  grid-row-gap: 1.7rem;
   justify-items: center;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.4rem;
 }
 
 .buttonsContainer2 {
-  margin-top: 17px;
-  gap: 1.3rem;
+  margin-top: 2.4rem;
+  gap: 2.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -36,47 +39,20 @@
 
 /* MEDIA QUERY FOR IPHONE SE (375 x 667 AND ABOVE) */
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .keypadContainer {
     width: 32.7rem;
     height: 42rem;
-  }
-}
-
-/* MEDIA QUERY FOR IPHONE 13 PRO (390 x 844 AND ABOVE) */
-
-@media screen and (min-width: 390px) {
-  .keypadContainer {
-    width: 35rem;
-    height: 44.7rem;
-  }
-}
-
-/* MEDIA QUERY FOR IPHONE 11 PRO MAX (414 x 896 AND ABOVE) */
-
-@media screen and (min-width: 414px) {
-  .keypadContainer {
-    width: 36rem;
-    height: 46.9rem;
-  }
-}
-
-/* MEDIA QUERY FOR MACBOOK PRO 14" (1512 x 982 AND ABOVE) */
-
-@media screen and (min-width: 1512px) {
-  .keypadContainer {
-    width: 54rem;
-    height: 48rem;
+    padding: 2.4rem;
   }
 
   .buttonsContainer {
-    grid-column-gap: 2.7rem;
-    grid-row-gap: 2.7rem;
+    grid-column-gap: 1.3rem;
+    grid-row-gap: 1.3rem;
   }
 
   .buttonsContainer2 {
-    margin-top: 2.7rem;
-    gap: 3rem;
+    margin-top: 1.3rem;
+    gap: 1.3rem;
   }
 }
-

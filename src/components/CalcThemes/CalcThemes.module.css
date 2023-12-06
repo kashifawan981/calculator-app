@@ -1,6 +1,7 @@
 /* BASE STYLES FOR ALL SCREENS */
 
 .themesContainer {
+  width: 54rem;
   height: 4.2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -12,15 +13,16 @@
 .themesContainer h1 {
   font-size: 3.2rem;
 }
-
 .themes {
   display: grid;
   justify-items: end;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .themeContainer {
   display: grid;
   height: 4.2rem;
+  grid-column: 2 / span 1;
 }
 
 .themeContainer p {
@@ -147,12 +149,13 @@
 
 /* MEDIA QUERY FOR IPHONE SE (375 x 667 AND ABOVE) */
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .themesContainer {
-    max-width: 32.7rem;
+    width: 32.7rem;
+    height: 4.2rem;
   }
 
-  .themesContainer h2 {
+  .themesContainer h1 {
     font-size: 3.2rem;
   }
 
@@ -164,49 +167,5 @@
   .themes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* MEDIA QUERY FOR IPHONE 13 PRO (390 x 844 AND ABOVE) */
-
-@media screen and (min-width: 390px) {
-  .themesContainer {
-    max-width: 35rem;
-  }
-
-  .themesContainer h2 {
-    font-size: 4rem;
-  }
-}
-
-/* MEDIA QUERY FOR IPHONE 11 PRO MAX (414 x 896 AND ABOVE) */
-
-@media screen and (min-width: 414px) {
-  .themesContainer {
-    max-width: 36rem;
-  }
-
-  .themesContainer h2 {
-    font-size: 4rem;
-  }
-}
-
-/* MEDIA QUERY FOR MACBOOK PRO 14" (1512 x 982 AND ABOVE) */
-
-@media screen and (min-width: 1512px) {
-  .themesContainer {
-    max-width: 54rem;
-  }
-
-  .themesContainer h2 {
-    font-size: 3.2rem;
-  }
-
-  .themes {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .themeContainer {
-    grid-column: 2 / span 1;
   }
 }
