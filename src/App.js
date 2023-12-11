@@ -82,7 +82,7 @@ function App() {
   return (
     <div className={`${style.page} ${style[theme]}`} theme={theme}>
       <CalcThemes onThemeChange={handleThemeChange} />
-      <CalcScreen calculation={calculation} theme={theme} />
+      <CalcScreen calculation={calculation} theme={theme} characterLimit={15}/>
       <CalcKeypad
         handleButtonClick={handleButtonClick}
         handleDelete={handleDelete}
